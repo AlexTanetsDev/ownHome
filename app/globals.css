@@ -31,3 +31,36 @@ body {
     text-wrap: balance;
   }
 } */
+
+body {
+  scroll-behavior: smooth;
+}
+
+.formInput {
+  outline: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.formLabel {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.activeLabel {
+  bottom: 24px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.imputEfrror {
+  position: absolute;
+  right: 0;
+  bottom: -24px;
+  color: red;
+}

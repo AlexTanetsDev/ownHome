@@ -12,7 +12,7 @@ const MainBtn = ({ type, text, onClick }: Props) => {
     <button
       type={type}
       onClick={onClick}
-      className=" w-[343px] h-[50px] py-[15px] rounded-md text-center text-white font-montserrat font-medium bg-[#DD6A00]"
+      className="cursor-pointer w-[343px] h-[50px] py-[15px] rounded-md text-center text-white font-montserrat font-medium bg-[#DD6A00] md:w-[196px] md:h-[44px] md:py-3"
     >
       {text}
     </button>

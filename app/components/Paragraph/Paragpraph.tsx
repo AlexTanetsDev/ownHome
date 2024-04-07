@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Paragpraph = ({ children, className }: Props) => {
-  return <p className={` font-montserrat text-base text-[#090909]  ${className}`}>{children}</p>;
+  return <p className={` font-montserrat text-base lg:text-lg text-[#090909]  ${className}`}>{children}</p>;
 };
 
 export default Paragpraph;
