@@ -9,7 +9,7 @@ import SwiperComp from '../Swiper/Swiper';
 
 const AboutUsSection = () => {
   return (
-    <Section className=" pt-[50px] md:pt-[68px] lg:pt-[100px]" id="#about">
+    <Section className=" pt-[50px] md:pt-[68px] lg:pt-[100px]" id="about">
       <MainContainer className="mb-[24px] md:mb-[42px]">
         <MainTitle text="Про нас" className="lg:text-center" />
       </MainContainer>

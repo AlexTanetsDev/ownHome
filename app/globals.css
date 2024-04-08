@@ -32,10 +32,6 @@ body {
   }
 } */
 
-body {
-  scroll-behavior: smooth;
-}
-
 .formInput {
   outline: none;
   border-bottom: 1px solid white;
@@ -63,4 +59,12 @@ body {
   right: 0;
   bottom: -24px;
   color: red;
+}
+
+.hoverNav:hover {
+  color: #ff8514;
+}
+
+.hoverBtn:hover {
+  background-color: #ff8514;
 }

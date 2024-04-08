@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ua">
-      <body className={`${roboto.variable} ${montserrat.variable}  ${messiri.variable} h-full`}>{children}</body>
+      <body className={`${roboto.variable} ${montserrat.variable}  ${messiri.variable} h-full scroll-auto`}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -8,7 +8,7 @@ import MainContainer from '../containers/MainContainer';
 
 const HeroSection = () => {
   return (
-    <Section className="relative w-full ">
+    <Section className="relative w-full md:max-w-full ">
       <Image src={HeroM} alt="Фото Києва" className="w-full h-[812px] md:hidden" />
       <Image src={HeroT} alt="Фото Києва" className="w-full h-[1133px] hidden md:block lg:hidden " />
       <Image src={HeroD} alt="Фото Києва" className="w-full h-[960px] hidden lg:block" />

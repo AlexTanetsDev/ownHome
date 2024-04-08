@@ -9,7 +9,7 @@ import MainContainer from '../containers/MainContainer';
 const ServiceSection = () => {
   return (
     <Section
-      className=" mt-[50px] bg-white  py-5 md:mt-[70px] md:py-6 lg:flex lg:mt-[100px] lg:py-0 lg:pl-5"
+      className=" mt-[50px] bg-white  py-5 md:mt-[70px] md:py-6 lg:flex  lg:mt-[100px] lg:py-0 lg:pl-5"
       id="service"
     >
       <MainTitle text="Послуги" className=" text-center mb-7 md:mb-[42px] lg:hidden " />
@@ -19,10 +19,10 @@ const ServiceSection = () => {
         className=" w-full h-[257px] md:h-[400px] lg:h-[700px] lg:w-[794px]"
         objectFit="cover"
       />
-      <MainContainer className=" mt-6 md:mt-8 lg:px-[54px] lg:mt-[120px]">
+      <MainContainer className=" mt-6 md:mt-8 lg:px-[54px] lg:mt-[120px] lg:flex lg:flex-col lg:justify-start lg:mx-0">
         <MainTitle text="Послуги" className=" mb-9 md:mb-[42px] hidden lg:block lg:mb-9" />
 
-        <ul className=" flex flex-col gap-3 text-[#090909] font-montserrat text-sm md:text-lg">
+        <ul className=" flex flex-col gap-3 text-[#090909] font-montserrat text-sm md:text-lg lg:max-w-[500px]">
           <li key={1}>
             <h3>Продаж, купівля, оренда житлової та комерційної нерухомості</h3>
           </li>

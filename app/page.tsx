@@ -1,5 +1,6 @@
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import ScrollToTopBtn from './components/ScrollToTop/ScrollToTopBtn';
 import AboutUsSection from './components/Sections/AboutUsSection';
 import BenefitsSection from './components/Sections/BenefitsSection';
 import ContactsSection from './components/Sections/ContactsSection';
