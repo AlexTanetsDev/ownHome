@@ -7,7 +7,7 @@ import Navbar from '../Navbar/Navbar';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const Header = () => {
-  const [isBurgerOpen, setIsBurgerOpen] = useState<boolean>(true);
+  const [isBurgerOpen, setIsBurgerOpen] = useState<boolean>(false);
 
   return (
     <>
