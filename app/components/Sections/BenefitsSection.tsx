@@ -13,35 +13,35 @@ const BenefitsSection = () => {
         <ul className="flex flex-col gap-[50px] md:gap-[60px] md:max-w-[612px] mx-auto lg:flex-row lg:flex-wrap lg:w-full lg:max-w-full justify-center">
           <li className=" flex flex-col gap-3  lg:w-[387px]">
             <BenefitsTitle>Cертифікаційна команда</BenefitsTitle>{' '}
-            <Paragpraph className="text-center">
+            <Paragpraph className="text-center lg:text-[16px]">
               Керівник і засновник агенції нерухомості ‘Власний дім’ - Дмитро Александров чиї знання, досвід та
               пристрасть спрямовані на створення найкращих умов для клієнтів.{' '}
             </Paragpraph>
           </li>
           <li className=" flex flex-col gap-3 lg:w-[387px]">
             <BenefitsTitle>Вигідні та прозорі умови</BenefitsTitle>{' '}
-            <Paragpraph className="text-center">
+            <Paragpraph className="text-center lg:text-[16px]">
               Керівник і засновник агенції нерухомості ‘Власний дім’ - Дмитро Александров чиї знання, досвід та
               пристрасть спрямовані на створення найкращих умов для клієнтів.{' '}
             </Paragpraph>
           </li>
           <li className=" flex flex-col gap-3 lg:w-[387px]">
             <BenefitsTitle>Конфіденційність</BenefitsTitle>{' '}
-            <Paragpraph className="text-center">
+            <Paragpraph className="text-center lg:text-[16px]">
               Керівник і засновник агенції нерухомості ‘Власний дім’ - Дмитро Александров чиї знання, досвід та
               пристрасть спрямовані на створення найкращих умов для клієнтів.{' '}
             </Paragpraph>
           </li>
           <li className=" flex flex-col gap-3 lg:w-[387px]">
             <BenefitsTitle>Офіс у центрі міста </BenefitsTitle>{' '}
-            <Paragpraph className="text-center">
+            <Paragpraph className="text-center lg:text-[16px]">
               Керівник і засновник агенції нерухомості ‘Власний дім’ - Дмитро Александров чиї знання, досвід та
               пристрасть спрямовані на створення найкращих умов для клієнтів.{' '}
             </Paragpraph>
           </li>
           <li className=" flex flex-col gap-3 lg:w-[387px]">
             <BenefitsTitle>Офіс у центрі міста </BenefitsTitle>{' '}
-            <Paragpraph className="text-center">
+            <Paragpraph className="text-center lg:text-[16px]">
               Керівник і засновник агенції нерухомості ‘Власний дім’ - Дмитро Александров чиї знання, досвід та
               пристрасть спрямовані на створення найкращих умов для клієнтів.{' '}
             </Paragpraph>

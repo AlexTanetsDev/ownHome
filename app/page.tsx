@@ -1,6 +1,6 @@
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import ScrollToTopBtn from './components/ScrollToTop/ScrollToTopBtn';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import AboutUsSection from './components/Sections/AboutUsSection';
 import BenefitsSection from './components/Sections/BenefitsSection';
 import ContactsSection from './components/Sections/ContactsSection';
@@ -19,6 +19,7 @@ export default function Home() {
       <TeamSection />
       <ContactsSection />
       <Footer />
+      <ScrollToTop />
     </main>
   );
 }

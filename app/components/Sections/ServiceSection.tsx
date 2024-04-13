@@ -2,8 +2,7 @@ import React from 'react';
 import Section from '../containers/Section';
 import MainTitle from '../Titles/MainTitle';
 import Image from 'next/image';
-import { Deal } from '@/public';
-import Paragpraph from '../Paragraph/Paragpraph';
+import { Deal, dealMob, dealTab } from '@/public';
 import MainContainer from '../containers/MainContainer';
 
 const ServiceSection = () => {
@@ -16,9 +15,17 @@ const ServiceSection = () => {
       <Image
         src={Deal}
         alt="Фото укладання угоди"
-        className=" w-full h-[257px] md:h-[400px] lg:h-[700px] lg:w-[794px]"
+        className=" w-full h-[257px] lg:h-[700px] lg:w-[794px] hidden lg:block"
         objectFit="cover"
       />
+      <Image
+        src={dealTab}
+        alt="Фото укладання угоди"
+        className=" hidden md:block lg:hidden w-full h-[368px]"
+        objectFit="cover"
+      />
+      <Image src={dealMob} alt="Фото укладання угоди" className="  md:hidden w-full h-[258px]" objectFit="cover" />
+
       <MainContainer className=" mt-6 md:mt-8 lg:px-[54px] lg:mt-[120px] lg:flex lg:flex-col lg:justify-start lg:mx-0">
         <MainTitle text="Послуги" className=" mb-9 md:mb-[42px] hidden lg:block lg:mb-9" />
 
@@ -36,7 +43,7 @@ const ServiceSection = () => {
             <h3>Продаж, купівля землі </h3>
           </li>
           <li key={5}>
-            <h3>Продаж та купівля підприємств таких як ресторани бази відпочинку, готелі, агропідприємства та інше</h3>
+            <h3>Продаж та купівля підприємств таких як ресторани, бази відпочинку, готелі, агропідприємства та інше</h3>
           </li>
         </ul>
       </MainContainer>

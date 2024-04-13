@@ -1,4 +1,3 @@
-import Logo from './Власний Дім, копія (1).svg';
 import Burger from './basil_menu-solid.svg';
 import Close from './bitcoin-icons_cross-filled.svg';
 import HeroM from './Rectangle 4553.jpg';
@@ -11,5 +10,7 @@ import Team4 from './десктоп/Rectangle 10.jpg';
 import Team5 from './десктоп/Rectangle 12.jpg';
 import Deal from './Rectangle 2.jpg';
 import LogoFooter from './Власний Дім, копія (2).svg';
+import dealTab from './DealTab.jpg';
+import dealMob from './dealMob.png';
 
-export { Logo, Burger, Close, HeroM, HeroT, HeroD, Team1, Team2, Team3, Team4, Team5, Deal, LogoFooter };
+export { Burger, Close, HeroM, HeroT, HeroD, Team1, Team2, Team3, Team4, Team5, Deal, LogoFooter, dealTab, dealMob };

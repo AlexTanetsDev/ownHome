@@ -14,8 +14,8 @@ const scrolltoHash = function (element_id: string) {
 const BurgerMenu = ({ handleClose, isOpen }: Props) => {
   return (
     <div
-      className={` w-screen h-screen pt-[190px] bg-[#141414] absolute lg:hidden top-0 left-0 z-10 transition-all ${
-        !isOpen && '-translate-y-full'
+      className={` overscroll-contain w-screen min-h-screen pt-[190px] bg-[#141414] absolute lg:hidden top-0 left-0 z-10 transition-all ${
+        !isOpen && '-translate-x-full'
       }`}
     >
       <nav>
@@ -44,18 +44,6 @@ const BurgerMenu = ({ handleClose, isOpen }: Props) => {
               Про нас
             </Link>
           </li>
-          <li key={3}>
-            <Link
-              href={'#team'}
-              scroll={false}
-              onClick={() => {
-                handleClose(false);
-                scrolltoHash('team');
-              }}
-            >
-              Наша команда
-            </Link>
-          </li>
           <li key={4}>
             <Link
               href={'#benefits'}
@@ -68,6 +56,19 @@ const BurgerMenu = ({ handleClose, isOpen }: Props) => {
               Переваги
             </Link>
           </li>
+          <li key={3}>
+            <Link
+              href={'#team'}
+              scroll={false}
+              onClick={() => {
+                handleClose(false);
+                scrolltoHash('team');
+              }}
+            >
+              Наша команда
+            </Link>
+          </li>
+
           <li key={5}>
             <Link
               href={'#contacts'}

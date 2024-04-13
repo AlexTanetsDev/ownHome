@@ -68,3 +68,13 @@ body {
 .hoverBtn:hover {
   background-color: #ff8514;
 }
+
+.scrollToTopButton {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scrollToTopButton.visible {
+  opacity: 1;
+}

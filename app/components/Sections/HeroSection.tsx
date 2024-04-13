@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { HeroD, HeroM, HeroT } from '@/public';
 import MainBtn from '../Buttons/MainBtn';
 import MainContainer from '../containers/MainContainer';
+import { scrolltoHash } from '../Navbar/Navbar';
 
 const HeroSection = () => {
   return (
@@ -19,7 +20,7 @@ const HeroSection = () => {
           Агенція нерухомості з великим досвідом, надаємо різноманітні варіанти житла, що відповідають потребам кожного
           клієнта.
         </h2>
-        <MainBtn type="button" text="Зв'язатись" onClick={() => console.log('Click')} />
+        <MainBtn type="button" text="Зв'язатись" onClick={() => scrolltoHash('contacts')} />
       </MainContainer>
     </Section>
   );

@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import Section from '../containers/Section';
 import MainContainer from '../containers/MainContainer';
 import MainTitle from '../Titles/MainTitle';
@@ -8,12 +10,13 @@ import Paragpraph from '../Paragraph/Paragpraph';
 import SwiperComp from '../Swiper/Swiper';
 
 const AboutUsSection = () => {
+  const [isopen, setIsopen] = useState<boolean>(false);
   return (
-    <Section className=" pt-[50px] md:pt-[68px] lg:pt-[100px]" id="about">
+    <Section className=" pt-[50px] md:pt-[68px] lg:pt-[100px] " id="about">
       <MainContainer className="mb-[24px] md:mb-[42px]">
         <MainTitle text="Про нас" className="lg:text-center" />
       </MainContainer>
-      <MainContainer className=" bg-white py-5 md:py-6 lg:flex lg:items-center lg:relative lg:h-[700px]">
+      <MainContainer className=" bg-white py-5 md:py-6 lg:flex lg:items-center lg:relative lg:h-[700px] lg:max-w-full">
         <Image
           src={Team1}
           alt="Фото зісновника"
@@ -24,10 +27,13 @@ const AboutUsSection = () => {
             Керівник і засновник агенції нерухомості ‘Власний дім’ - Дмитро Александров чиї знання, досвід та пристрасть
             спрямовані на створення найкращих умов для клієнтів. Засновавши цю агенцію, Дмитро віддав свою енергію та
             талант з метою забезпечити професійне обслуговування
-            <span className="md:hidden">
-              ... <span className="text-[#1B21AF]">Читати далі</span>
+            <span className={`md:hidden ${isopen && 'hidden'}`}>
+              ...{' '}
+              <span className="text-[#1B21AF] " onClick={() => setIsopen(true)}>
+                Читати далі
+              </span>
             </span>
-            <span className="hidden md:inline">
+            <span className={` md:inline ${!isopen && 'hidden'}`}>
               {' '}
               у сфері нерухомості на ринку Києва. Він обирає індивідуальний підхід до кожного клієнта, ретельно
               аналізуючи їхні потреби та впевнено керуючи усіма етапами угоди. Дмитро та його команда професіоналів
@@ -40,7 +46,7 @@ const AboutUsSection = () => {
           </Paragpraph>
         </div>
       </MainContainer>
-      <MainContainer className=" py-[50px] md:py-[70px] lg:py-[100px] lg:pt-[160px]">
+      <MainContainer className=" py-[50px] md:py-[70px] lg:py-[100px] lg:pt-[160px] lg:max-w-full">
         <SwiperComp />
       </MainContainer>
       <MainContainer className=" bg-white md:bg-inherit  ">
@@ -48,7 +54,7 @@ const AboutUsSection = () => {
           <h2 className="text-[#090909] font-messiri text-[40px] italic text-center mb-6 lg:text-[55px]">
             Власний дім це
           </h2>
-          <Paragpraph className="text-center">
+          <Paragpraph className=" md:text-center">
             Керівник і засновник агенції нерухомості ‘Власний дім’ - Дмитро Александров чиї знання, досвід та пристрасть
             спрямовані на створення найкращих умов для клієнтів. Засновавши цю агенцію, Дмитро віддав свою енергію та
             талант з метою забезпечити професійне обслуговування у сфері нерухомості на ринку Києва. Він обирає

@@ -10,9 +10,9 @@ const TeamSection = () => {
   return (
     <Section className="lg:pb-[80px]" id="team">
       <MainContainer className="pb-[65px] md:pb-[85px] lg:pb-[92px]">
-        <MainTitle text="Наша команда" className="text-center pl-[80px]" />
+        <MainTitle text="Наша команда" className="text-center md:pl-[80px]" />
       </MainContainer>
-      <MainContainer className="relative pb-5 bg-white lg:flex lg:h-[476px]">
+      <MainContainer className="relative pb-5 bg-white lg:flex lg:h-[476px] lg:max-w-full">
         <div className="md:flex  ">
           <Image
             src={Team2}
@@ -37,7 +37,7 @@ const TeamSection = () => {
           </Paragpraph>
         </div>
       </MainContainer>
-      <MainContainer className=" pt-[50px] pb-[91px] md:pt-7 md:pb-[60px] lg:py-5 lg:flex flex-row-reverse lg:gap-[134px] lg:justify-center">
+      <MainContainer className=" pt-[50px] pb-[91px] md:pt-7 md:pb-[60px] lg:py-5 lg:flex flex-row-reverse lg:gap-[134px] lg:justify-start">
         <div className="md:flex flex-row-reverse ">
           <Image
             src={Team3}
@@ -50,7 +50,7 @@ const TeamSection = () => {
           </h3>
         </div>
         <div className="lg:mt-[137px]">
-          <h3 className=" font-roboto text-center text-[30px] italic text-[#090909]  mb-[22px] ">
+          <h3 className=" font-roboto  text-[30px] italic text-[#090909]  mb-[22px] hidden ld:block ">
             Коваль Ілона Вікторівна
           </h3>
           <Paragpraph className="md:max-w-[567px] md:mt-7">
@@ -61,7 +61,7 @@ const TeamSection = () => {
           </Paragpraph>
         </div>
       </MainContainer>
-      <MainContainer className="relative pb-5 bg-white md:pb-8 md:pt-5 lg:py-5 lg:flex lg:gap-[134px] lg:justify-center items-center">
+      <MainContainer className="relative pb-5 bg-white md:pb-8 md:pt-5 lg:py-5 lg:flex lg:gap-[134px] lg:justify-start items-center lg:max-w-full">
         <div className="md:flex  ">
           <Image
             src={Team4}
@@ -74,7 +74,7 @@ const TeamSection = () => {
           </h3>
         </div>
         <div>
-          <h3 className=" font-roboto text-center text-[30px] italic  text-[#090909]  hidden lg:block lg:mb-[22px]">
+          <h3 className=" font-roboto text-[30px] italic  text-[#090909]  hidden lg:block lg:mb-[22px]">
             Коваль Ілона Вікторівна
           </h3>
           <Paragpraph className="md:max-w-[567px] md:mt-7 md:ml-auto">
@@ -85,7 +85,7 @@ const TeamSection = () => {
           </Paragpraph>
         </div>
       </MainContainer>
-      <MainContainer className=" pt-[50px] pb-[91px] md:pt-[28px] md:pb-[70px] lg:py-5 lg:flex flex-row-reverse lg:gap-[134px] lg:justify-center">
+      <MainContainer className=" pt-[50px] pb-[91px] md:pt-[28px] md:pb-[70px] lg:py-5 lg:flex flex-row-reverse lg:gap-[134px] lg:justify-start">
         <div className="md:flex flex-row-reverse ">
           <Image
             src={Team5}
@@ -98,7 +98,7 @@ const TeamSection = () => {
           </h3>
         </div>
         <div className="lg:mt-[137px]">
-          <h3 className=" font-roboto text-center text-[30px] italic text-[#090909]  mb-[22px] ">
+          <h3 className=" font-roboto  text-[30px] italic text-[#090909]  mb-[22px] hidden ld:block">
             Коваль Ілона Вікторівна
           </h3>
           <Paragpraph className="md:max-w-[567px] md:mt-7">
