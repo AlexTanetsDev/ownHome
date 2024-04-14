@@ -2,7 +2,7 @@ import React, { Dispatch } from 'react';
 import Link from 'next/link';
 
 type Props = {
-  handleClose: Dispatch<React.SetStateAction<boolean>>;
+  handleClose: () => void;
   isOpen: boolean;
 };
 
@@ -25,7 +25,7 @@ const BurgerMenu = ({ handleClose, isOpen }: Props) => {
               href={'/#service'}
               scroll={false}
               onClick={() => {
-                handleClose(false);
+                handleClose();
                 scrolltoHash('service');
               }}
             >
@@ -37,7 +37,7 @@ const BurgerMenu = ({ handleClose, isOpen }: Props) => {
               href={'#about'}
               scroll={false}
               onClick={() => {
-                handleClose(false);
+                handleClose();
                 scrolltoHash('about');
               }}
             >
@@ -49,7 +49,7 @@ const BurgerMenu = ({ handleClose, isOpen }: Props) => {
               href={'#benefits'}
               scroll={false}
               onClick={() => {
-                handleClose(false);
+                handleClose();
                 scrolltoHash('benefits');
               }}
             >
@@ -61,7 +61,7 @@ const BurgerMenu = ({ handleClose, isOpen }: Props) => {
               href={'#team'}
               scroll={false}
               onClick={() => {
-                handleClose(false);
+                handleClose();
                 scrolltoHash('team');
               }}
             >
@@ -74,7 +74,7 @@ const BurgerMenu = ({ handleClose, isOpen }: Props) => {
               href={'#contacts'}
               scroll={false}
               onClick={() => {
-                handleClose(false);
+                handleClose();
                 scrolltoHash('contacts');
               }}
             >

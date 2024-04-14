@@ -1,7 +1,7 @@
 'use client';
 import { Burger, Close, LogoFooter } from '@/public';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MainContainer from '../containers/MainContainer';
 import Navbar from '../Navbar/Navbar';
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
@@ -38,7 +38,13 @@ const Header = () => {
           <Navbar />
         </MainContainer>
       </header>
-      <BurgerMenu handleClose={setIsBurgerOpen} isOpen={isBurgerOpen} />
+      <BurgerMenu
+        handleClose={() => {
+          setIsBurgerOpen(false);
+          document.body.classList.remove(`overflow-hidden`);
+        }}
+        isOpen={isBurgerOpen}
+      />
     </>
   );
 };
