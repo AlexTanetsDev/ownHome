@@ -69,7 +69,7 @@ const ContactsForm = () => {
             required: "Обов'язкове поле",
             onChange: (e) => setPhone(e.currentTarget.value),
             pattern: {
-              value: /^(\+?380)?\d{9}$/,
+              value: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/,
               message: 'Невірний формат номера',
             },
           })}
