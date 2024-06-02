@@ -16,15 +16,9 @@ const ServiceSection = () => {
         src={Deal}
         alt="Фото укладання угоди"
         className=" w-full h-[257px] lg:h-[700px] lg:w-[794px] hidden lg:block"
-        objectFit="cover"
       />
-      <Image
-        src={dealTab}
-        alt="Фото укладання угоди"
-        className=" hidden md:block lg:hidden w-full h-[368px]"
-        objectFit="cover"
-      />
-      <Image src={dealMob} alt="Фото укладання угоди" className="  md:hidden w-full h-[258px]" objectFit="cover" />
+      <Image src={dealTab} alt="Фото укладання угоди" className=" hidden md:block lg:hidden w-full h-[368px]" />
+      <Image src={dealMob} alt="Фото укладання угоди" className="  md:hidden w-full h-[258px]" />
 
       <MainContainer className=" mt-6 md:mt-8 lg:px-[54px] lg:mt-[120px] lg:flex lg:flex-col lg:justify-start lg:mx-0">
         <MainTitle text="Послуги" className=" mb-9 md:mb-[42px] hidden lg:block lg:mb-9" />

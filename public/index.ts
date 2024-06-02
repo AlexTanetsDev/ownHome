@@ -1,16 +1,14 @@
 import Burger from './basil_menu-solid.svg';
 import Close from './bitcoin-icons_cross-filled.svg';
-import HeroM from './Rectangle 4553.jpg';
-import HeroT from './Rectangle 4535.jpg';
-import HeroD from './десктоп/Rectangle 1.jpg';
-import Team1 from './десктоп/Rectangle 5.jpg';
-import Team2 from './десктоп/Rectangle 8.jpg';
-import Team3 from './десктоп/Rectangle 9.jpg';
-import Team4 from './десктоп/Rectangle 10.jpg';
-import Team5 from './десктоп/Rectangle 12.jpg';
-import Deal from './Rectangle 2.jpg';
+import HeroM from './home-hero-mob.jpg';
+import HeroT from './hero-home-tab.jpg';
+import HeroD from './home-hero-desk.jpg';
+import Team1 from './vlasnyi-1.jpg';
+import Team2 from './vlasnyi-2.jpg';
+import Team3 from './vlasnyi-3.jpg';
 import LogoFooter from './Власний Дім, копія (2).svg';
-import dealTab from './DealTab.jpg';
-import dealMob from './dealMob.png';
+import Deal from './deal-desk.jpg';
+import dealTab from './deal-tab.jpg';
+import dealMob from './deal-mob.jpg';
 
-export { Burger, Close, HeroM, HeroT, HeroD, Team1, Team2, Team3, Team4, Team5, Deal, LogoFooter, dealTab, dealMob };
+export { Burger, Close, HeroM, HeroT, HeroD, Team1, Team2, Team3, Deal, LogoFooter, dealTab, dealMob };

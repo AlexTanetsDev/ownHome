@@ -1,7 +1,6 @@
 'use client';
 import React, { useState } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import MainBtn from '../Buttons/MainBtn';
 import FormSubmitBtn from '../Buttons/FormSubmitBtn';
 import telegramBotService from '@/services/telegramBot.service';
 import toast from 'react-hot-toast';
